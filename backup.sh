@@ -2,7 +2,7 @@
 cd /srv/samba/laila_201911092
 git add .
 git commit -m "automatic backup"
-git push origin master >> " /var/log/backup.log"2>&1
+git push origin master >> " /var/log/backup.log" 2>&1
 if [ $? -eq 0 ]
 then 
 echo "backup successfull" >> " /var/log/backup.log"
